@@ -1,0 +1,744 @@
+<html>
+  <head>
+    <title>traffic Video</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link href="./assets/css/video-js-cdn.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/videojs-contrib-hls.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <button id="playBtn">play</button>
+      <div class="video-page">
+        <div class="video-pagecont">
+          <div class="video-content">
+            <div class="prev-btn-box">
+              <button class="prev-btn">
+                <i class="fa fa-angle-left" aria-hidden="true"></i
+                >previous<br />
+                episode
+              </button>
+            </div>
+            <div class="video-frame">
+              <video
+                id="video"
+                class="video-js vjs-default-skin"
+                preload="none"
+                crossorigin="true"
+                controls
+                width="640"
+                height="268"
+                data-setup="{}"
+              >
+                <!-- <source src="" type="application/x-mpegURL" /> -->
+              </video>
+            </div>
+            <div class="next-btn-box">
+              <button class="next-btn">
+                Next<br />
+                episode<i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="video-content-main">
+            <div class="video-lcontent">
+              <h2 class="street-name mb-8"></h2>
+              <p class="mb-8">32min | Added: 17.05.2022</p>
+              <div class="inf">
+                <p>
+                  <i class="fa fa-eye mr-4" aria-hidden="true"></i>22 158 Views
+                </p>
+                <p>
+                  <i class="fa fa-thumbs-up mr-4" aria-hidden="true"></i>202
+                </p>
+                <p>
+                  <i class="fa fa-thumbs-o-down mr-4" aria-hidden="true"></i>29
+                </p>
+              </div>
+              <p class="description"></p>
+            </div>
+            <div class="video-rcontent">
+              <div class="star-fav">
+                <div>
+                  <div class="mr-4">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <p class="rates">9.5</p>
+                    <p>231 Views</p>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="mr-4">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <p>Add to</p>
+                    <p>my list</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="share-cont">
+                <span>Share:</span>
+                <ul>
+                  <li class="fb">
+                    <a href="#" class="text-white"
+                      ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="tw">
+                    <a href="#" class="text-white"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="go">
+                    <a href="#" class="text-white"
+                      ><i class="fa fa-google-plus" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="ml">
+                    <a href="#" class="text-white"
+                      ><i class="fa fa-envelope" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tags">
+                <p>
+                  <span>Tags:</span>Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem
+                  Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem
+                  Ipsum,Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="list-page">
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video1"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb1"></span>
+          </div>
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">West Victoria at Overlanders Bridge</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/w-victoria-overlanders.stream/playlist.m3u8"
+                  disabled
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6787437,-120.349514,3a,75y,88.63h,97.43t/data=!3m6!1e1!3m4!1sfudysvecEvJVBCs16Gv2eg!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" alt="" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video2"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb2"></span>
+          </div>
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Overlanders Bridge Cam</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/overlanders-bridge.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6800223,-120.3511056,3a,75y,204.63h,103.51t/data=!3m9!1e1!3m7!1sh-eTWh5tcJwfF_Vk9oRYAA!2e0!7i16384!8i8192!9m2!1b1!2i49"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video3"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb3"></span>
+          </div>
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Summit Drive & Columbia Street W.</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/summit-columbia.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6671106,-120.3543427,3a,75y,176.36h,88.66t/data=!3m6!1e1!3m4!1sWDxI3mxaCpX8CB5AUfOcmg!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video4"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb4"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Summit Drive & McGill Road</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/summit-mcgill.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6689299,-120.3579355,3a,75y,64.81h,87.72t/data=!3m6!1e1!3m4!1sPoYKCmWzhYastpN_zKZj3g!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video5"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb5"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Columbia Street W & Notre Dame Drive</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/columbia-notredame.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6637363,-120.3539932,3a,75y,39.33h,84.24t/data=!3m6!1e1!3m4!1spFUHYgnzfvKnthmomMQIKg!2e0!7i13312!8i6656"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video6"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb6"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Columbia Street W & McGill Road</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/bridge-webcam/_definst_/columbia-mcgill.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6699497,-120.3547053,3a,75y,101.86h,90.34t/data=!3m6!1e1!3m4!1sIye2rn5l0AE3dBXtQSERjQ!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video7"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb7"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Tranquille & 12th Street</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description" class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/tranquille-12th.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.7007656,-120.3724346,3a,75y,311.03h,83.96t/data=!3m6!1e1!3m4!1s3rafnfFj5_B2h5ECtnpfVw!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video8"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb8"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Tranquille & Holt Street</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/tranquille-holt.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.7020252,-120.3887143,3a,75y,246.98h,83.87t/data=!3m6!1e1!3m4!1sb7zj66_9D5W7nxX7-SNIhw!2e0!7i13312!8i6656"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video9"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb9"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Tranquille & Desmond Street</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/tranquille-desmond.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.7001665,-120.3931709,3a,42.3y,214.6h,92.76t/data=!3m6!1e1!3m4!1sqLl_vkPY3l-l1rCZpcYXKQ!2e0!7i13312!8i6656"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video10"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb10"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Tranquille & Singh Street</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/tranquille-singh.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.7025156,-120.3840929,3a,75y,293.23h,79.28t/data=!3m6!1e1!3m4!1sF9zVvx3PU-N4qSd6MdnBNA!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video11"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb11"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Columbia Street & 3rd Avenue</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/columbia-3rd.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6713557,-120.3343721,3a,75y,285.88h,81.98t/data=!3m6!1e1!3m4!1ssz_arASZmiS8p-BgQWZjPA!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video12"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb12"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Halston & 12th Street</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/traffic/_definst_/halston-12th.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.7099054,-120.3635287,3a,75y,245.3h,95.73t/data=!3m6!1e1!3m4!1sNHD7uLywEbsn4L-PmQDEIg!2e0!7i13312!8i6656"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="main-list">
+          <div class="list-image">
+            <video
+              id="video13"
+              class="video-js vjs-default-skin video-thumb"
+              preload="none"
+              crossorigin="true"
+              autoplay
+              muted
+              width="220"
+              height="160"
+              controls
+            ></video>
+            <span id="img-thumb13"></span>
+          </div>
+
+          <div class="list-content">
+            <div class="left-content">
+              <span>Comedy, Horror, 2011</span>
+              <h2 class="street-name">Halston & Kingston Ave</h2>
+              <p>Newest episode: <span>S09E03</span></p>
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's...
+              </p>
+              <div class="button_list">
+                <a
+                  class="watch-btn"
+                  value="https://tccmediasvr.kamloops.ca/bridge-webcam/_definst_/halston-kingston.stream/playlist.m3u8"
+                  >WATCH NOW</a
+                >
+                <a class="online">Online</a>
+                <a class="offline">Offline</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span
+                ><i class="fa fa-eye" aria-hidden="true"></i>12472 Views</span
+              >
+              <a
+                href="https://www.google.com/maps/@50.6767643,-120.3344994,3a,75y,115.57h,99.04t/data=!3m6!1e1!3m4!1sxrFzLPkiVE9BxTTbRVDeNQ!2e0!7i16384!8i8192"
+                target="_blank"
+                ><img src="./assets/images/location_icon.png" /></a
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/script.js"></script>
+</html>
